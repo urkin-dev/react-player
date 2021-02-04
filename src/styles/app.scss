@@ -1,0 +1,23 @@
+@import "./player";
+@import "./song";
+@import "./library";
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050611;
+    font-family: "Lato", sans-serif;
+}
+
+.particles {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
