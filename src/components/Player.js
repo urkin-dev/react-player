@@ -34,6 +34,12 @@ export default function Player({ currentSong, isPlaying, setIsPlaying }) {
 		setSongInfo({ ...songInfo, currentTime: e.target.value });
 	};
 
+	const autoPlayHandler = () => {
+		if (isPlaying) {
+			audioRef.current.play();
+		}
+	}
+
 	//Functions
 	const getTime = (time) => {
 		return (
@@ -77,6 +83,7 @@ export default function Player({ currentSong, isPlaying, setIsPlaying }) {
 			<audio
 				onTimeUpdate={timeUpdateHandler}
 				onLoadedMetadata={timeUpdateHandler}
+				onLoadedData={autoPlayHandler}
 				ref={audioRef}
 				src={currentSong.audio}
 			></audio>

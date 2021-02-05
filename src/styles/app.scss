@@ -1,3 +1,4 @@
+@import "./variables";
 @import "./player";
 @import "./song";
 @import "./library";
@@ -9,7 +10,7 @@
 }
 
 body {
-    background-color: #050611;
+    background-color: $basic-background;
     font-family: "Lato", sans-serif;
 }
 

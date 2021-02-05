@@ -1,13 +1,13 @@
 .library {
     position: fixed;
-    box-shadow: 0 0 50px #44e0dd;
+    box-shadow: 0 0 50px $basic-lightgreen;
     top: 0;
     left: 0;
     width: 20rem;
     height: 100%;
     overflow: scroll;
-    background: white;
-    // background-color: #050611;
+    color: $basic-white;
+    background-color: $basic-background;
     // transform: translateX(-100%);
     transition: all 0.5s ease;
     // opacity: 0;
@@ -22,14 +22,18 @@
     align-items: center;
     padding: 1rem 2rem 1rem 2rem;
     cursor: pointer;
-    transition: all 0.75s ease-out;
+    transition: all 0.5s ease-out;
 
     img {
         width: 30%;
     }
 
     &:hover {
-        background: rgb(224, 224, 224);
+        background: $library-hover;
+    }
+
+    h4 {
+        color: $basic-lightgreen;
     }
 }
 
@@ -49,7 +53,7 @@
      that is currently Firefox-only */
 * {
     scrollbar-width: thin;
-    scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
+    scrollbar-color: $scrollbar-color transparent;
 }
 
 /* Works on Chrome/Edge/Safari */
@@ -62,13 +66,13 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgba(155, 155, 155, 0.7);
+    background-color: $scrollbar-color;
     border-radius: 20px;
     border: transparent;
 }
 
 .selected {
-    background: rgb(194, 208, 253);
+    background: $selected-color;
 }
 
 .active-library {

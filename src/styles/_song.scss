@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: $basic-white;
 
     img {
         width: 20%;
@@ -12,8 +12,8 @@
         transition: all 2s ease;
 
         box-shadow:
-            inset 0 0 70px #44e0dd,
-            0 0 30px #44e0dd;
+            inset 0 0 70px $basic-lightgreen,
+            0 0 30px $basic-lightgreen;
     }
 
     h2 {
@@ -21,7 +21,7 @@
     }
     
     h3 {
-        color: #44e0dd;
+        color: $basic-lightgreen;
         font-size: 1rem;
         font-weight: lighter;
     }
