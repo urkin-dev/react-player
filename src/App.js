@@ -128,9 +128,11 @@ function App() {
 			<Particles className="particles" params={blueParticles} />
 			<Song currentSong={currentSong} />
 			<Player
+				songs={songs}
 				isPlaying={isPlaying}
 				setIsPlaying={setIsPlaying}
 				currentSong={currentSong}
+				setCurrentSong={setCurrentSong}
 			/>
 			<Library
 				setCurrentSong={setCurrentSong}
