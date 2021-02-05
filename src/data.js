@@ -56,6 +56,42 @@ function chillHop() {
 			color: ['#205950', '#2ab3bf'],
 			id: uuidv4(),
 		},
+		{
+			name: 'Silence',
+			cover:
+				'https://chillhop.com/wp-content/uploads/2020/07/04dfa5fd3df93012cb2ae27065602fb944b43b91-1024x1024.jpg',
+			artist: 'Toonorth',
+			audio: 'https://mp3.chillhop.com/serve.php/?mp3=8425',
+			color: ['#43364d', '#745ba7'],
+			id: uuidv4(),
+		},
+		{
+			name: 'Melancholy',
+			cover:
+				'https://chillhop.com/wp-content/uploads/2020/11/f78c39b4bb6313ddd0354bef896c591bfb490ff8-1024x1024.jpg',
+			artist: 'Makzo',
+			audio: 'https://mp3.chillhop.com/serve.php/?mp3=11778',
+			color: ['#5c70ab', '#e9866f'],
+			id: uuidv4(),
+		},
+		{
+			name: 'Lax Incense',
+			cover:
+				'https://chillhop.com/wp-content/uploads/2021/01/6b1bb8736ee3e972747bc11f312e31cf7f5823e4-1024x1024.jpg',
+			artist: 'Mama Aiuto, Daphné',
+			audio: 'https://mp3.chillhop.com/serve.php/?mp3=12125',
+			color: ['#411514', '#7a3a17'],
+			id: uuidv4(),
+		},
+		{
+			name: "Let's Stay Inside",
+			cover:
+				'https://chillhop.com/wp-content/uploads/2020/04/478079cd16fca3ef62a4667dff1673e96e2b635f-1024x1024.jpg',
+			artist: 'No Spirit',
+			audio: 'https://mp3.chillhop.com/serve.php/?mp3=9428',
+			color: ['#68a0c1', '#df6e64'],
+			id: uuidv4(),
+		},
 	];
 }
 

@@ -4,7 +4,7 @@ import {
 	faPlay,
 	faAngleLeft,
 	faAngleRight,
-	faPause
+	faPause,
 } from '@fortawesome/free-solid-svg-icons';
 
 export default function Player({ currentSong, isPlaying, setIsPlaying }) {
@@ -30,7 +30,7 @@ export default function Player({ currentSong, isPlaying, setIsPlaying }) {
 	};
 
 	const dragHandler = (e) => {
-		audioRef.current.currentTime = e.target.value;
+		audioRef.current.currentTime = e.target.value;		
 		setSongInfo({ ...songInfo, currentTime: e.target.value });
 	};
 
@@ -38,7 +38,7 @@ export default function Player({ currentSong, isPlaying, setIsPlaying }) {
 		if (isPlaying) {
 			audioRef.current.play();
 		}
-	}
+	};
 
 	//Functions
 	const getTime = (time) => {
@@ -59,7 +59,7 @@ export default function Player({ currentSong, isPlaying, setIsPlaying }) {
 				<p>{getTime(songInfo.currentTime)}</p>
 				<input
 					min={0}
-					max={songInfo.duration}
+					max={songInfo.duration || 0}
 					value={songInfo.currentTime}
 					type="range"
 					onChange={dragHandler}

@@ -7,6 +7,7 @@ import data from './data';
 
 import './styles/app.scss';
 import Library from './components/Library';
+import Nav from './components/Nav';
 
 const greenParticles = {
 	particles: {
@@ -114,12 +115,15 @@ const blueParticles = {
 };
 
 function App() {
-	const [songs, setSongs] = useState(data);
+	//States
+	const [songs] = useState(data);
 	const [currentSong, setCurrentSong] = useState(songs[0]);
 	const [isPlaying, setIsPlaying] = useState(false);
+	const [libraryStatus, setLibraryStatus] = useState(false);
 
 	return (
 		<div className="App">
+			<Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
 			<Particles className="particles" params={greenParticles} />
 			<Particles className="particles" params={blueParticles} />
 			<Song currentSong={currentSong} />
@@ -132,6 +136,7 @@ function App() {
 				setCurrentSong={setCurrentSong}
 				currentSong={currentSong}
 				songs={songs}
+				libraryStatus={libraryStatus}
 			/>
 		</div>
 	);
